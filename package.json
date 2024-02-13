@@ -1,6 +1,7 @@
 {
   "name": "tokengenerator",
   "version": "0.1.0",
+  "homepage": "https://digao-dalpiaz.github.io/TokenGenerator",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.2",
