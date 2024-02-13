@@ -14,6 +14,9 @@ jobs:
   deploy-react-to-gh-pages:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+
     steps:
       # checkout the repository content to github runner
       - name: Checkout
