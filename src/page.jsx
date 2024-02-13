@@ -44,10 +44,10 @@ export default function Page() {
 
       <Row>
         <Col>
-          <Input label="Issued data/time" compValue={dateIn} datetime />
+          <Input label="Issued data/time (UTC)" compValue={dateIn} datetime />
         </Col>
         <Col>
-          <Input label="Expiration date/time" compValue={dateOut} datetime />
+          <Input label="Expiration date/time (UTC)" compValue={dateOut} datetime />
         </Col>
       </Row>
 
@@ -104,7 +104,7 @@ export default function Page() {
   }
 
   function strToDateForToken(s) {
-    return Math.floor(new Date(s) / 1000);
+    return Math.floor(new Date(s + ':00Z') / 1000);
   }
 
   function setClaimProp(index, propName, ev) {
