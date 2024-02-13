@@ -1,5 +1,4 @@
-# Token Generator
-JWT Token Generator
+# JWT Token Generator
 
 This is a tool developed in React, which allows generating JWT tokens, according to the parameters provided.
 
