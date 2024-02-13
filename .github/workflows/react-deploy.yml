@@ -1,5 +1,11 @@
 name: React App Deployment # name of the workflow
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,5 +45,3 @@ jobs:
 
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v4.0.4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
